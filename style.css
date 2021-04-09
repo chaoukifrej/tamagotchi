@@ -1,0 +1,135 @@
+body {
+  background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%2306B' cx='45' cy='45' r='10'/%3E%3Cg fill='%23800' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: "DotGothic16", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: #fcff25;
+}
+.containerPrincipal {
+  padding: 10px;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+/* container Tableau De Bord */
+.containerTableauDeBord {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 120px;
+}
+.containerTableauDeBord div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.containerTableauDeBord p {
+  justify-self: center;
+  margin: 5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #054d88;
+}
+
+/* progress Bar initial */
+
+#energieP {
+  min-width: 100%;
+}
+#energiePP {
+  max-width: 100%;
+}
+
+#joieP {
+  min-width: 100%;
+}
+#joiePP {
+  width: 50%;
+}
+
+#nourritureP {
+  min-width: 100%;
+}
+#nourriturePP {
+  width: 0%;
+}
+
+#propreteP {
+  min-width: 100%;
+}
+#propretePP {
+  width: 50%;
+}
+
+/* Container Tamagotchi */
+.containerTamagotchi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.containerTamagotchi img {
+  height: 300px;
+}
+
+/* Container  Fonctions (BOUTONS)*/
+#containerFonctions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerFonctions button {
+  padding: 10px 15px;
+  color: #fcff25;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+  background-color: #054d88;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#containerFonctions button:focus {
+  outline: none;
+}
+#containerFonctions button:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+}
+/* pour JS - do not Erase */
+.progressBar {
+  grid-area: 2 / 1 / 3 / 3;
+  align-self: center;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #fbff2585;
+}
+
+.progressInt {
+  grid-area: 2 / 1 / 3 / 3;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  background-color: purple;
+}
+
+.displayNone {
+  display: none;
+}
